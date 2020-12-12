@@ -1,7 +1,6 @@
 pipeline {
     agent {
         docker {
-            chmod +x nome script
             image 'my_local_maven' 
             args '-v /root/.m2:/root/.m2' 
         }
