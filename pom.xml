@@ -27,7 +27,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.mycompany.app.App</mainClass>
+              <mainClass>com.mycompany.app.Calculadora</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -37,7 +37,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
         <configuration>
-            <mainClass>com.mycompany.app.App</mainClass>
+            <mainClass>com.mycompany.app.Calculadora</mainClass>
         </configuration>
       </plugin>
     </plugins>
