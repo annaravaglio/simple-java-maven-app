@@ -30,36 +30,54 @@ public class AppTest
     }
 
     @Test
-    public void testAppMain()
+    public void testSoma()
     {
-        // App.main(null);
-        // try {
-        //     assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
-        // } catch (AssertionError e) {
-        //     fail("\"message\" is not \"Hello World!\"");
-        // }
-        int soma, sub, mult, div;
+        int soma;
 
         soma = Calculadora.operacao(1, "+", 2);
-        sub = Calculadora.operacao(2, "-", 1);
-        mult = Calculadora.operacao(3, "*", 3);
-        div = Calculadora.operacao(4, "/", 2);
-                
+
         try {
             assertEquals("Resultado 1 + 2 = 3 \n", 3, soma);
         } catch (AssertionError e) {
             fail("Resultado da soma não é 3");
         }
+    }
+
+    @Test
+    public void testSub()
+    {
+        int sub;
+
+        sub = Calculadora.operacao(2, "-", 1);
+                
         try {
             assertEquals("Resultado 2 - 1 = 1 \n", 1, sub);
         } catch (AssertionError e) {
             fail("Resultado da subtração não é 1");
         }
+    }
+    
+    @Test
+    public void testMult()
+    {
+        int mult;
+
+        mult = Calculadora.operacao(3, "*", 3);
+
         try {
             assertEquals("Resultado 3 * 3 = 9 \n", 9, mult);
         } catch (AssertionError e) {
             fail("Resultado da multiplicação não é 9");
         }
+    }
+    
+    @Test
+    public void testDiv()
+    {
+        int div;
+
+        div = Calculadora.operacao(4, "/", 2);
+                
         try {
             assertEquals("Resultado 4 / 2 = 2 \n", 2, div);
         } catch (AssertionError e) {
