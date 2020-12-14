@@ -37,7 +37,8 @@ public class AppTest
         soma = Calculadora.operacao(1, "+", 2);
 
         try {
-            assertEquals("Resultado 1 + 2 = 3 \n", 3, soma);
+            System.out.printf("\nResultado 1 + 2 = %d", soma);
+            assertEquals(3, soma);
         } catch (AssertionError e) {
             fail("Resultado da soma não é 3");
         }
@@ -51,6 +52,7 @@ public class AppTest
         sub = Calculadora.operacao(2, "-", 1);
                 
         try {
+            System.out.printf("\nResultado 2 - 1 = %d", sub);
             assertEquals("Resultado 2 - 1 = 1 \n", 1, sub);
         } catch (AssertionError e) {
             fail("Resultado da subtração não é 1");
@@ -65,6 +67,7 @@ public class AppTest
         mult = Calculadora.operacao(3, "*", 3);
 
         try {
+            System.out.printf("\nResultado 3 * 3 = %d", mult);
             assertEquals("Resultado 3 * 3 = 9 \n", 9, mult);
         } catch (AssertionError e) {
             fail("Resultado da multiplicação não é 9");
@@ -79,6 +82,7 @@ public class AppTest
         div = Calculadora.operacao(4, "/", 2);
                 
         try {
+            System.out.printf("\nResultado 4 / 2 = %d\n", div);
             assertEquals("Resultado 4 / 2 = 2 \n", 2, div);
         } catch (AssertionError e) {
             fail("Resultado da divisão não é 2");
