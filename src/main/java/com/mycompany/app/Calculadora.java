@@ -53,6 +53,20 @@ public class Calculadora {
 
     
     public static void main(String[] args) {
-        System.out.println("Eu sou o Main");
+        System.out.println("Eu sou Universal");
+        
+        int soma, sub, mult, div;
+
+        soma = Calculadora.operacao(1, "+", 2);
+        System.out.printf("Resultado 1 + 2 = ", soma);
+
+        sub = Calculadora.operacao(2, "-", 1);
+        System.out.printf("Resultado 2 - 1 = ", sub);
+
+        mult = Calculadora.operacao(3, "*", 3);
+        System.out.printf("Resultado 3 * 3 = ", mult);
+
+        div = Calculadora.operacao(4, "/", 2);
+        System.out.printf("Resultado 4 / 2 = ", div);
     }
 }
