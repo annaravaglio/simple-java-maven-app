@@ -54,19 +54,19 @@ public class Calculadora {
     
     public static void main(String[] args) {
         System.out.println("Eu sou Universal");
-        
+
         int soma, sub, mult, div;
 
         soma = Calculadora.operacao(1, "+", 2);
-        System.out.printf("Resultado 1 + 2 = ", soma);
+        System.out.printf("\nResultado 1 + 2 = %d", soma);
 
         sub = Calculadora.operacao(2, "-", 1);
-        System.out.printf("Resultado 2 - 1 = ", sub);
+        System.out.printf("\nResultado 2 - 1 = %d", sub);
 
         mult = Calculadora.operacao(3, "*", 3);
-        System.out.printf("Resultado 3 * 3 = ", mult);
+        System.out.printf("\nResultado 3 * 3 = %d", mult);
 
         div = Calculadora.operacao(4, "/", 2);
-        System.out.printf("Resultado 4 / 2 = ", div);
+        System.out.printf("\nResultado 4 / 2 = %d\n", div);
     }
 }
