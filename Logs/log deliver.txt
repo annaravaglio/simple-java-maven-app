@@ -1,0 +1,57 @@
++ chmod +x ./jenkins/scripts/deliver.sh
++ ./jenkins/scripts/deliver.sh
+The following Maven command installs your Maven-built Java application
+into the local Maven repository, which will ultimately be stored in
+Jenkinss local Maven repository (and the "maven-repository" Docker data
+volume).
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.pom
+Progress (1): 2.7/7.7 kBProgress (1): 5.5/7.7 kBProgress (1): 7.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.pom (7.7 kB at 8.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom
+Progress (1): 2.7/26 kBProgress (1): 5.5/26 kBProgress (1): 8.2/26 kBProgress (1): 11/26 kB Progress (1): 14/26 kBProgress (1): 16/26 kBProgress (1): 19/26 kBProgress (1): 22/26 kBProgress (1): 25/26 kBProgress (1): 26 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom (26 kB at 95 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+Progress (1): 2.7/4.1 kBProgress (1): 4.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (4.1 kB at 16 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.jar
+Progress (1): 2.7/38 kBProgress (1): 5.5/38 kBProgress (1): 8.2/38 kBProgress (1): 11/38 kB Progress (1): 14/38 kBProgress (1): 16/38 kBProgress (1): 19/38 kBProgress (1): 22/38 kBProgress (1): 25/38 kBProgress (1): 27/38 kBProgress (1): 30/38 kBProgress (1): 33/38 kBProgress (1): 36/38 kBProgress (1): 38 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.jar (38 kB at 133 kB/s)
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ my-app >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ my-app <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ my-app ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+Progress (1): 2.7/3.4 kBProgress (1): 3.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom (3.4 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
+Progress (1): 747 B                   Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 2.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+Progress (1): 601 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 2.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+Progress (1): 2.7/8.8 kBProgress (1): 5.5/8.8 kBProgress (1): 8.2/8.8 kBProgress (1): 8.8 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (8.8 kB at 33 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.pom
+Progress (1): 2.7/11 kBProgress (1): 5.5/11 kBProgress (1): 8.2/11 kBProgress (1): 11/11 kB Progress (1): 11 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.pom (11 kB at 44 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom
+Progress (1): 2.7/31 kBProgress (1): 5.5/31 kBProgress (1): 8.2/31 kBProgress (1): 11/31 kB Progress (1): 14/31 kBProgress (1): 16/31 kBProgress (1): 19/31 kBProgress (1): 22/31 kBProgress (1): 25/31 kBProgress (1): 27/31 kBProgress (1): 30/31 kBProgress (1): 31 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 kB at 114 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+Progress (1): 2.7/14 kBProgress (1): 5.5/14 kBProgress (1): 8.2/14 kBProgress (1): 11/14 kB Progress (1): 14/14 kBProgress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (14 kB at 56 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar
+Progress (1): 2.7/33 kBProgress (1): 5.5/33 kBProgress (1): 8.2/33 kBProgress (1): 11/33 kB Progress (1): 14/33 kBProgress (1): 16/33 kBProgress (1): 19/33 kBProgress (1): 22/33 kBProgress (1): 25/33 kBProgress (1): 27/33 kBProgress (1): 30/33 kBProgress (1): 33/33 kBProgress (1): 33 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar (33 kB at 114 kB/s)
+Progress (1): 2.7/53 kBProgress (1): 5.5/53 kBProgress (1): 8.2/53 kBProgress (1): 11/53 kB Progress (1): 14/53 kBProgress (1): 16/53 kBProgress (2): 16/53 kB | 2.7/195 kBProgress (2): 16/53 kB | 5.5/195 kBProgress (2): 16/53 kB | 8.2/195 kBProgress (2): 16/53 kB | 11/195 kB Progress (2): 16/53 kB | 14/195 kBProgress (2): 19/53 kB | 14/195 kBProgress (2): 19/53 kB | 16/195 kBProgress (2): 22/53 kB | 16/195 kBProgress (2): 22/53 kB | 19/195 kBProgress (2): 25/53 kB | 19/195 kBProgress (2): 25/53 kB | 22/195 kBProgress (2): 25/53 kB | 25/195 kBProgress (2): 27/53 kB | 25/195 kBProgress (2): 27/53 kB | 27/195 kBProgress (2): 30/53 kB | 27/195 kBProgress (2): 33/53 kB | 27/195 kBProgress (2): 33/53 kB | 30/195 kBProgress (2): 33/53 kB | 33/195 kBProgress (2): 36/53 kB | 33/195 kBProgress (2): 36/53 kB | 36/195 kBProgress (2): 38/53 kB | 36/195 kBProgress (2): 38/53 kB | 38/195 kBProgress (2): 41/53 kB | 38/195 kBProgress (2): 41/53 kB | 41/195 kBProgress (2): 44/53 kB | 41/195 kBProgress (2): 47/53 kB | 41/195 kBProgress (2): 49/53 kB | 41/195 kBProgress (2): 52/53 kB | 41/195 kBProgress (2): 53 kB | 41/195 kB   Progress (2): 53 kB | 44/195 kBProgress (2): 53 kB | 47/195 kBProgress (2): 53 kB | 49/195 kBProgress (2): 53 kB | 52/195 kBProgress (2): 53 kB | 55/195 kBProgress (2): 53 kB | 58/195 kBProgress (2): 53 kB | 60/195 kBProgress (2): 53 kB | 63/195 kBProgress (2): 53 kB | 66/195 kBProgress (2): 53 kB | 69/195 kBProgress (2): 53 kB | 71/195 kBProgress (2): 53 kB | 74/195 kBProgress (2): 53 kB | 77/195 kBProgress (2): 53 kB | 80/195 kBProgress (2): 53 kB | 82/195 kBProgress (2): 53 kB | 85/195 kBProgress (2): 53 kB | 88/195 kBProgress (2): 53 kB | 90/195 kBProgress (2): 53 kB | 93/195 kBProgress (2): 53 kB | 96/195 kBProgress (2): 53 kB | 99/195 kBProgress (2): 53 kB | 101/195 kBProgress (2): 53 kB | 104/195 kBProgress (2): 53 kB | 107/195 kBProgress (2): 53 kB | 110/195 kBProgress (2): 53 kB | 112/195 kBProgress (2): 53 kB | 115/195 kBProgress (2): 53 kB | 118/195 kBProgress (2): 53 kB | 121/195 kBProgress (2): 53 kB | 123/195 kBProgress (2): 53 kB | 126/195 kBProgress (2): 53 kB | 129/195 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar (53 kB at 80 kB/s)
+Progress (1): 132/195 kBProgress (1): 134/195 kBProgress (1): 137/195 kBProgress (1): 140/195 kBProgress (1): 143/195 kBProgress (1): 145/195 kBProgress (1): 148/195 kBProgress (1): 151/195 kBProgress (1): 154/195 kBProgress (1): 156/195 kBProgress (1): 159/195 kBProgress (1): 162/195 kBProgress (1): 165/195 kBProgress (1): 167/195 kBProgress (1): 170/195 kBProgress (1): 173/195 kBProgress (1): 175/195 kBProgress (1): 178/195 kBProgress (1): 181/195 kBProgress (1): 184/195 kBProgress (1): 186/195 kBProgress (1): 189/195 kBProgress (1): 192/195 kBProgress (1): 195/195 kBProgress (1): 195 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar (195 kB at 234 kB/s)
+
+Resultado 1 + 2 = 3
+Resultado 2 - 1 = 1
+Resultado 3 * 3 = 9
+Resultado 4 / 2 = 2
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.194 s
+[INFO] Finished at: 2020-12-14T13:10:50Z
+[INFO] ------------------------------------------------------------------------
