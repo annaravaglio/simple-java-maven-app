@@ -53,8 +53,6 @@ public class Calculadora {
 
     
     public static void main(String[] args) {
-        System.out.println("Eu sou Universal");
-
         int soma, sub, mult, div;
 
         soma = Calculadora.operacao(1, "+", 2);
