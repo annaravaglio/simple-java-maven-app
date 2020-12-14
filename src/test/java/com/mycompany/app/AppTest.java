@@ -23,7 +23,7 @@ public class AppTest
     @Test
     public void testAppConstructor() {
         try {
-            new App();
+            new Calculadora();
         } catch (Exception e) {
             fail("Construction failed.");
         }
